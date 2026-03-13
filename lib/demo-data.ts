@@ -2,12 +2,12 @@ import type { DashboardData } from "./types";
 
 export const DEMO_DATA: DashboardData = {
   kpis: {
-    cantidad: 14.730,
-    meGusta: 12.450,
+    cantidad: 14730,
+    meGusta: 12450,
     compartido: 755,
-    comentario: 2.267,
-    seguidoresCaptados: 4.750,
-    ondaExpansiva: 0, // auto-calculated if ondaAuto
+    comentario: 2267,
+    seguidoresCaptados: 4750,
+    ondaExpansiva: 0,
     ondaFactor: 300,
     ondaAuto: true,
     totalInvertido: 8546345,
@@ -15,7 +15,7 @@ export const DEMO_DATA: DashboardData = {
   links: [
     {
       id: "l1",
-      publicacion: "Asì soy asì hablo.",
+      publicacion: "Así soy, así hablo.",
       url: "https://www.instagram.com/reel/DVSWv5VDLx3/?igsh=M2JiMmRhczZjcnhu",
       medio: "Instagram",
       cantidad: 285432,
@@ -23,7 +23,7 @@ export const DEMO_DATA: DashboardData = {
     },
     {
       id: "l2",
-      publicacion: "Colombia tiene talento, creatividad y una enorme fuerza cultural. ",
+      publicacion: "Colombia tiene talento, creatividad y una enorme fuerza cultural.",
       url: "https://www.instagram.com/reel/DVhSE0Yj6iw/?igsh=aHp6cjVkd2hnOTM%3D",
       medio: "Instagram",
       cantidad: 184534,
@@ -57,20 +57,20 @@ export const DEMO_DATA: DashboardData = {
       id: "l6",
       publicacion: "Sin cédula no hay voto y sin voto no hay cambio",
       url: "https://www.tiktok.com/@mariapazgaviria/video/7609304841868938510?_r=1&_t=ZS-94fO1LyytNc",
-      medio: "Tik Tok",
+      medio: "TikTok",
       cantidad: 46374,
       engagementRate: 5.1,
     },
   ],
   temas: [
-    { id: "t1", tema: "Territorio y comunidad ", cantidad: 5.510 },
+    { id: "t1", tema: "Territorio y comunidad", cantidad: 5510 },
     { id: "t2", tema: "Democracia", cantidad: 6450 },
     { id: "t3", tema: "Empleo Joven", cantidad: 5704 },
-    { id: "t4", tema: "Salud Publica", cantidad: 2768 },
+    { id: "t4", tema: "Salud Pública", cantidad: 2768 },
     { id: "t5", tema: "Medio Ambiente", cantidad: 1766 },
-    { id: "t6", tema: "Defensa de conversacion", cantidad: 2203 },
+    { id: "t6", tema: "Defensa de conversación", cantidad: 2203 },
   ],
-  medios: [], // auto-calculated from links by default
+  medios: [],
   contactoDirecto: {
     diasCampana: 10,
     sms: {
@@ -167,12 +167,25 @@ export const DEMO_DATA: DashboardData = {
     },
   ],
   conclusiones: [
-    { id: "c1", texto: "La estrategia evidencia una fuerte capacidad de producción y circulación de contenidos, lo que permitió mantener una presencia digital constante y sostener la visibilidad de los temas estratégicos en redes sociales.
-" },
-    { id: "c2", texto: "El alcance superior a 5,7 millones de personas demuestra una capacidad efectiva de amplificación, logrando que los mensajes trasciendan las audiencias directas y se posicionen en conversaciones digitales más amplias.
-" },
-    { id: "c3", texto: "⁠Instagram se consolida como el principal canal de difusión, concentrando más del 80 % de la distribución, lo que confirma la efectividad de los formatos visuales y narrativos propios de esta plataforma para amplificar los contenidos.
-" },
-    { id: "c4", texto: "Los temas relacionados con territorio, comunidad y democracia muestran mayor capacidad de resonancia, lo que sugiere que estas narrativas generan mayor conexión con las audiencias y representan una oportunidad estratégica para fortalecer el engagement en futuras fases de la estrategia digital." },
+    {
+      id: "c1",
+      texto:
+        "La estrategia evidencia una fuerte capacidad de producción y circulación de contenidos, lo que permitió mantener una presencia digital constante y sostener la visibilidad de los temas estratégicos en redes sociales.",
+    },
+    {
+      id: "c2",
+      texto:
+        "El alcance superior a 5,7 millones de personas demuestra una capacidad efectiva de amplificación, logrando que los mensajes trasciendan las audiencias directas y se posicionen en conversaciones digitales más amplias.",
+    },
+    {
+      id: "c3",
+      texto:
+        "Instagram se consolida como el principal canal de difusión, concentrando más del 80 % de la distribución, lo que confirma la efectividad de los formatos visuales y narrativos propios de esta plataforma para amplificar los contenidos.",
+    },
+    {
+      id: "c4",
+      texto:
+        "Los temas relacionados con territorio, comunidad y democracia muestran mayor capacidad de resonancia, lo que sugiere que estas narrativas generan mayor conexión con las audiencias y representan una oportunidad estratégica para fortalecer el engagement en futuras fases de la estrategia digital.",
+    },
   ],
 };
