@@ -2,13 +2,13 @@ import type { DashboardData } from "./types";
 
 export const DEMO_DATA: DashboardData = {
   kpis: {
-    cantidad: 35500,
-    meGusta: 12450,
-    compartido: 8320,
-    comentario: 3180,
-    seguidoresCaptados: 4750,
+    cantidad: 9.175,
+    meGusta: 12.450,
+    compartido: 755,
+    comentario: 2.267,
+    seguidoresCaptados: 4.750,
     ondaExpansiva: 0, // auto-calculated if ondaAuto
-    ondaFactor: 3.5,
+    ondaFactor: 300,
     ondaAuto: true,
     totalInvertido: 8546345,
   },
