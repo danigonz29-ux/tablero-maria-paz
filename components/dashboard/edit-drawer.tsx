@@ -25,6 +25,12 @@ const EDITABLE_KPIS = [
 export function EditDrawer() {
   const { data, updateKPI } = useDashboard();
 
+  const editMode =
+    typeof window !== "undefined" &&
+    new URLSearchParams(window.location.search).get("edit") === "true";
+
+  if (!editMode) return null;
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -47,7 +53,6 @@ export function EditDrawer() {
         </SheetHeader>
 
         <div className="flex flex-col gap-6 p-4">
-          {/* Read-only: Contenidos Apoyados */}
           <div className="flex flex-col gap-1.5">
             <Label className="text-xs text-muted-foreground">
               Contenidos Apoyados (auto-calculado)
@@ -57,7 +62,6 @@ export function EditDrawer() {
             </div>
           </div>
 
-          {/* Editable KPIs */}
           {EDITABLE_KPIS.map(({ key, label }) => (
             <div key={key} className="flex flex-col gap-1.5">
               <Label htmlFor={`kpi-${key}`} className="text-sm font-medium">
@@ -73,7 +77,6 @@ export function EditDrawer() {
             </div>
           ))}
 
-          {/* Onda expansiva section */}
           <div className="rounded-xl border border-primary/10 bg-primary/5 p-4">
             <h3 className="mb-3 text-sm font-bold text-primary">
               Onda Expansiva
@@ -102,7 +105,7 @@ export function EditDrawer() {
               <p className="text-xs text-muted-foreground">
                 {data.kpis.ondaAuto
                   ? "Modo auto: contenidos apoyados x factor"
-                  : "Modo manual: edita desde la seccion principal"}
+                  : "Modo manual: edita desde la sección principal"}
               </p>
             </div>
           </div>
