@@ -8,7 +8,7 @@ export const DEMO_DATA: DashboardData = {
     comentario: 2267,
     seguidoresCaptados: 4750,
     ondaExpansiva: 0,
-    ondaFactor: 300,
+    ondaFactor: 500,
     ondaAuto: true,
     totalInvertido: 0,
   },
